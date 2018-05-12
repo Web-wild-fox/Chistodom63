@@ -36,7 +36,7 @@
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<!-- <span class="navbar-toggler-icon"></span> --><i class="fas fa-bars navbar-tog-icon"></i>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarNav">
@@ -82,15 +82,35 @@
 
 		<section id="home" class="container-fluid section-1 section-1__decor">
 			<div class="row">
-				<div class="col-8 section-1-carousel">
+				<div class="col-xl-8 col-12 section-1-carousel">
 
-					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="section-1__d-md-none_d-block d-md-none d-block">
+
+						<h1 class="carousel-caption__title">Химчистка мебели,<br> диванов и ковров на дому <br> в Самаре</h1>
+						<div class="carousel-caption__box-items">
+							<div class="carousel-caption__item">
+								<img src="img/s1__icon_1.svg" alt="Наши преимущества" class="carousel-caption__item_img">
+								<p class="carousel-caption__item_text">Внимательное отношение к клиенту</p>
+							</div>
+							<div class="carousel-caption__item">
+								<img src="img/s1__icon_2.svg" alt="Наши преимущества" class="carousel-caption__item_img">
+								<p class="carousel-caption__item_text">Внимательное отношение к клиенту</p>
+							</div>
+							<div class="carousel-caption__item">
+								<img src="img/s1__icon_3.svg" alt="Наши преимущества" class="carousel-caption__item_img">
+								<p class="carousel-caption__item_text">Внимательное отношение к клиенту</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div id="carouselExampleFade" class="carousel slide carousel-fade d-none d-md-block" data-ride="carousel">
 
 							<div class="carousel-inner">
 
 								<div class="carousel-item active section-1-carousel__carousel-item">
 
-									<div class="carousel-caption d-none d-md-block">
+									<div class="carousel-caption">
 										<h1 class="carousel-caption__title">Химчистка мебели,<br> диванов и ковров на дому <br> в Самаре</h1>
 										<div class="carousel-caption__box-items">
 											<div class="carousel-caption__item">
@@ -99,11 +119,11 @@
 											</div>
 											<div class="carousel-caption__item">
 												<img src="img/s1__icon_1.svg" alt="Наши преимущества" class="carousel-caption__item_img">
-												<p class="carousel-caption__item_text">Внимательное отношение к клиенту</p>
+												<p class="carousel-caption__item_text">Бережное отношение к объекту чистки</p>
 											</div>
 											<div class="carousel-caption__item">
 												<img src="img/s1__icon_1.svg" alt="Наши преимущества" class="carousel-caption__item_img">
-												<p class="carousel-caption__item_text">Внимательное отношение к клиенту</p>
+												<p class="carousel-caption__item_text">Гибкая ценовая политика</p>
 											</div>
 										</div>
 
@@ -113,7 +133,7 @@
 
 								<div class="carousel-item section-1-carousel__carousel-item">
 
-									<div class="carousel-caption d-none d-md-block">
+									<div class="carousel-caption">
 										<h1 class="carousel-caption__title">Химчистка мебели,<br> диванов и ковров на дому <br> в Самаре</h1>
 										<div class="carousel-caption__box-items">
 											<div class="carousel-caption__item">
@@ -136,7 +156,7 @@
 
 								<div class="carousel-item section-1-carousel__carousel-item">
 
-									<div class="carousel-caption d-none d-md-block">
+									<div class="carousel-caption">
 										<h1 class="carousel-caption__title">Химчистка мебели,<br> диванов и ковров на дому <br> в Самаре</h1>
 										<div class="carousel-caption__box-items">
 											<div class="carousel-caption__item">
@@ -159,14 +179,14 @@
 
 							</div>
 
-							<!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+							<a class="carousel-control-prev d-xl-none" href="#carouselExampleFade" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
 							</a>
-							<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+							<a class="carousel-control-next d-xl-none" href="#carouselExampleFade" role="button" data-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="sr-only">Next</span>
-							</a> -->
+							</a>
 						
 							<ol class="carousel-indicators">
 								<li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
@@ -177,7 +197,7 @@
 						</div>
 
 				</div>
-				<div class="col-4 section-1-form">
+				<div class="col-xl-4 col-12 section-1-form">
 
 					<form>
 
@@ -193,7 +213,11 @@
 							<input type="tel" class="form-control section-1-form__input" id="InputPhoneHeader" placeholder="tel.:">
 						</div>
 
-						<button type="submit" class="btn btn-primary section-1-form__button">Заказать! <i class="far fa-hand-point-up"></i></button>
+						<button type="submit" class="btn btn-primary section-1-form__button">Заказать! <i class="far fa-hand-point-up"></i> *</button>
+
+						<a class="popup-with-zoom-anim section-1__contacts_agreement-link" href="#small-dialog">
+							<p class="section-1__contacts_agreement-text">* Нажимая кнопку ( Заказать ), Вы подтверждаете свое согласие на обработку персональных данных <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p>
+						</a><br>
 
 					</form>
 
@@ -205,14 +229,14 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-3"></div>
-					<div class="col-6">
+					<div class="col-xl-3 col-1"></div>
+					<div class="col-xl-6 col-10">
 
 						<h2 class="section-2__box-service_title"><i class="far fa-handshake"></i> Наши услуги</h2>
 						<p class="section-2__box-service_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores suscipit cupiditate voluptatum iste iure. Adipisci numquam totam fuga sequi.</p>
 
 					</div>
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-1"></div>
 
 				</div>
 			</div>
@@ -222,7 +246,7 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-3 section-3__bg-img_after">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_after">
 						<a class="image-popup-vertical-fit section-3__img-after_link" href="img/s3__bg_after-1.jpg">
 							<div class="section-3__bg-img_after-overlay">
 								<p class="section-3__bg-img_after-text">ДО</p>
@@ -231,12 +255,12 @@
 						</a>
 					</div>
 
-					<div class="col-6 section-3__box-text">
+					<div class="col-xl-6 col-12 section-3__box-text">
 						<h2 class="section-3__box-text_title">Lorem, ipsum dolor.</h2>
 						<p class="section-3__box-text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel praesentium cumque quisquam veritatis voluptatum!</p>
 					</div>
 
-					<div class="col-3 section-3__bg-img_before">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_before">
 						<a class="image-popup-vertical-fit section-3__img-before_link" href="img/s3__bg_before-1.jpg">
 							<div class="section-3__bg-img_before-overlay">
 								<p class="section-3__bg-img_before-text">ПОСЛЕ</p>
@@ -247,7 +271,7 @@
 
 					<div class="col-12 section-3__box-separation"></div>
 
-					<div class="col-3 section-3__bg-img_after">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_after">
 						<a class="image-popup-vertical-fit section-3__img-after_link" href="img/s3__bg_after-1.jpg">
 							<div class="section-3__bg-img_after-overlay">
 								<p class="section-3__bg-img_after-text">ДО</p>
@@ -256,12 +280,12 @@
 						</a>
 					</div>
 
-					<div class="col-6 section-3__box-text section-3__box-text_bg-white">
+					<div class="col-xl-6 col-12 section-3__box-text section-3__box-text_bg-white">
 						<h2 class="section-3__box-text_title">Lorem, ipsum dolor.</h2>
 						<p class="section-3__box-text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel praesentium cumque quisquam veritatis voluptatum!</p>
 					</div>
 
-					<div class="col-3 section-3__bg-img_before">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_before">
 						<a class="image-popup-vertical-fit section-3__img-before_link" href="img/s3__bg_before-1.jpg">
 							<div class="section-3__bg-img_before-overlay">
 								<p class="section-3__bg-img_before-text">ПОСЛЕ</p>
@@ -272,7 +296,7 @@
 
 					<div class="col-12 section-3__box-separation"></div>
 
-					<div class="col-3 section-3__bg-img_after">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_after">
 						<a class="image-popup-vertical-fit section-3__img-after_link" href="img/s3__bg_after-1.jpg">
 							<div class="section-3__bg-img_after-overlay">
 								<p class="section-3__bg-img_after-text">ДО</p>
@@ -281,12 +305,12 @@
 						</a>
 					</div>
 
-					<div class="col-6 section-3__box-text">
+					<div class="col-xl-6 col-12 section-3__box-text">
 						<h2 class="section-3__box-text_title">Lorem, ipsum dolor.</h2>
 						<p class="section-3__box-text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel praesentium cumque quisquam veritatis voluptatum!</p>
 					</div>
 
-					<div class="col-3 section-3__bg-img_before">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_before">
 						<a class="image-popup-vertical-fit section-3__img-before_link" href="img/s3__bg_before-1.jpg">
 							<div class="section-3__bg-img_before-overlay">
 								<p class="section-3__bg-img_before-text">ПОСЛЕ</p>
@@ -297,7 +321,7 @@
 
 					<div class="col-12 section-3__box-separation"></div>
 
-					<div class="col-3 section-3__bg-img_after">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_after">
 						<a class="image-popup-vertical-fit section-3__img-after_link" href="img/s3__bg_after-1.jpg">
 							<div class="section-3__bg-img_after-overlay">
 								<p class="section-3__bg-img_after-text">ДО</p>
@@ -306,12 +330,12 @@
 						</a>
 					</div>
 
-					<div class="col-6 section-3__box-text section-3__box-text_bg-white">
+					<div class="col-xl-6 col-12 section-3__box-text section-3__box-text_bg-white">
 						<h2 class="section-3__box-text_title">Lorem, ipsum dolor.</h2>
 						<p class="section-3__box-text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel praesentium cumque quisquam veritatis voluptatum!</p>
 					</div>
 
-					<div class="col-3 section-3__bg-img_before">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_before">
 						<a class="image-popup-vertical-fit section-3__img-before_link" href="img/s3__bg_before-1.jpg">
 							<div class="section-3__bg-img_before-overlay">
 								<p class="section-3__bg-img_before-text">ПОСЛЕ</p>
@@ -322,7 +346,7 @@
 
 					<div class="col-12 section-3__box-separation"></div>
 
-					<div class="col-3 section-3__bg-img_after">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_after">
 						<a class="image-popup-vertical-fit section-3__img-after_link" href="img/s3__bg_after-1.jpg">
 							<div class="section-3__bg-img_after-overlay">
 								<p class="section-3__bg-img_after-text">ДО</p>
@@ -331,12 +355,12 @@
 						</a>
 					</div>
 
-					<div class="col-6 section-3__box-text">
+					<div class="col-xl-6 col-12 section-3__box-text">
 						<h2 class="section-3__box-text_title">Lorem, ipsum dolor.</h2>
 						<p class="section-3__box-text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel praesentium cumque quisquam veritatis voluptatum!</p>
 					</div>
 
-					<div class="col-3 section-3__bg-img_before">
+					<div class="col-xl-3 d-none d-xl-block section-3__bg-img_before">
 						<a class="image-popup-vertical-fit section-3__img-before_link" href="img/s3__bg_before-1.jpg">
 							<div class="section-3__bg-img_before-overlay">
 								<p class="section-3__bg-img_before-text">ПОСЛЕ</p>
@@ -355,14 +379,14 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-1"></div>
 
-					<div class="col-6">
+					<div class="col-xl-6 col-10">
 						<h2 class="section-4__box-about-us_title"><i class="far fa-user"></i> О нас</h2>
 						<p class="section-4__box-about-us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores suscipit cupiditate voluptatum iste iure. Adipisci numquam totam fuga sequi.</p>
 					</div>
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-1"></div>
 
 					<div class="col-12">
 
@@ -405,15 +429,15 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-1"></div>
 
-					<div class="col-6">
+					<div class="col-xl-6 col-10">
 						<h2 class="section-5__box-our-prices_title"><i class="fas fa-ruble-sign"></i> Наши цены</h2>
 						<p class="section-5__box-our-prices_text-aper">Свободная ценовая политика</p>
 						<p class="section-5__box-our-prices_text">Мы предоставляем свои услуги по самым низким ценам на рынке. Несмотря на это, вы можете запросить проведение работ по ценам, которые сочтете для себя приемлимыми. Мы предоставляем скидки новым, а также постоянным клиентам, с возможнью получения персональных предложений.</p>
 					</div>
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-1"></div>
 
 				</div>
 			</div>
@@ -423,9 +447,9 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-md-1"></div>
 
-					<div class="col-6">
+					<div class="col-xl-6 col-md-10">
 
 						<h2 class="section-6__box-price-list_title">Ориентировочный прайс-лист</h2>
 
@@ -584,7 +608,7 @@
 
 					</div>
 
-					<div class="col-3"></div>
+					<div class="col-xl-3 col-md-1"></div>
 
 					<div class="col-12 section-6__button-position">
 						<a href="#!" class="section-6__button-download_link">
@@ -615,11 +639,11 @@
 						<div class="container-fluid">
 							<div class="row">
 
-								<div class="col-6">
-									<img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide">
+								<div class="col-lg-6 col-sm-12 section-7__slider-stock_img">
+									<!-- <img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide"> -->
 								</div>
 
-								<div class="col-6">
+								<div class="col-lg-6 col-sm-12">
 									<h2 class="section-7__slider-stock_title"><i class="fas fa-percent"></i> Акции</h2>
 									<p class="section-7__slider-stock_text-aper">Стоимость по фото</p>
 									<p class="section-7__slider-stock_text">Мы предоставляем свои услуги по самым низким ценам на рынке. Несмотря на это, вы можете запросить проведение работ по ценам, которые сочтете для себя приемлимыми. Мы предоставляем скидки новым, а также постоянным клиентам, с возможнью получения персональных предложений.</p>
@@ -635,11 +659,11 @@
 						<div class="container-fluid">
 							<div class="row">
 
-								<div class="col-6">
-									<img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide">
+								<div class="col-lg-6 col-sm-12 section-7__slider-stock_img">
+									<!-- <img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide"> -->
 								</div>
 
-								<div class="col-6">
+								<div class="col-lg-6 col-sm-12">
 									<h2 class="section-7__slider-stock_title"><i class="fas fa-percent"></i> Акции</h2>
 									<p class="section-7__slider-stock_text-aper">Стоимость по фото</p>
 									<p class="section-7__slider-stock_text">Мы предоставляем свои услуги по самым низким ценам на рынке. Несмотря на это, вы можете запросить проведение работ по ценам, которые сочтете для себя приемлимыми. Мы предоставляем скидки новым, а также постоянным клиентам, с возможнью получения персональных предложений.</p>
@@ -655,11 +679,11 @@
 						<div class="container-fluid">
 							<div class="row">
 
-								<div class="col-6">
-									<img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide">
+								<div class="col-lg-6 col-sm-12 section-7__slider-stock_img">
+									<!-- <img class="d-block w-100" src="img/s7__slider_img-1.jpg" alt="First slide"> -->
 								</div>
 
-								<div class="col-6">
+								<div class="col-lg-6 col-sm-12">
 									<h2 class="section-7__slider-stock_title"><i class="fas fa-percent"></i> Акции</h2>
 									<p class="section-7__slider-stock_text-aper">Стоимость по фото</p>
 									<p class="section-7__slider-stock_text">Мы предоставляем свои услуги по самым низким ценам на рынке. Несмотря на это, вы можете запросить проведение работ по ценам, которые сочтете для себя приемлимыми. Мы предоставляем скидки новым, а также постоянным клиентам, с возможнью получения персональных предложений.</p>
@@ -697,22 +721,22 @@
 						</h2>
 					</div>
 					
-					<div class="col-6">
+					<div class="col-md-6">
 						<p class="section-8__contacts-text section-8__contacts-text_right">Телефон для связи:</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-md-6">
 						<p class="section-8__contacts-text">
 							<i class="fas fa-mobile-alt section-8__contacts-icon"></i> тел.: 
 							<a class="section-8__contacts_phone-number" href="tel:+71234567890">+7(123) 456-78-90</a>
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-md-6">
 						<p class="section-8__contacts-text section-8__contacts-text_right">Мы ВКонтакте:</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-md-6">
 						<p class="section-8__contacts-text">
 							<i class="fab fa-vk section-8__contacts-icon"></i> 
 							<a class="section-8__contacts_link" href="#!">Chistodom63</a>
@@ -735,11 +759,72 @@
 								<input type="tel" class="form-control section-8__contacts-form__input" id="InputPhoneFooter" placeholder="tel.:">
 							</div>
 	
-							<button type="submit" class="btn btn-primary section-8__contacts-form__button">Заказать! <i class="far fa-hand-point-up"></i></button>
+							<button type="submit" class="btn btn-primary section-8__contacts-form__button">Заказать! <i class="far fa-hand-point-up"></i> *</button>
 	
 						</form>
 
 					</div>
+
+					<div class="col-12 section-8__contacts_box-agreement">
+
+						<a class="popup-with-zoom-anim section-8__contacts_agreement-link" href="#small-dialog">
+								<p class="section-8__contacts_agreement-text">* Нажимая кнопку ( Заказать ), Вы подтверждаете свое согласие на обработку персональных данных <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p>
+						</a><br>
+
+						<!-- Модальное окно в Магнифик Попап -->
+						<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+
+							<h3 class="box-agreement__title">Согласие на обработку
+									персональных данных</h3>
+					
+							<p class="box-agreement__text-agree">Пользователь, заполняя форму обратной связи на данном сайте,
+								принимает   настоящее   Согласие   на   обработку   персональных   данных   (далее   –
+								Согласие).   Действуя   свободно,   своей   волей   и   в   своем   интересе,   а   также
+								подтверждая свою дееспособность, Пользователь дает свое согласие Физческому Лицу (далее - физ. лицо) "ФИО" (далее - Исполнитель)  на   обработку   своих
+							персональных       данных       со       следующими       условиями:</p>
+							<p class="box-agreement__text">1.   Данное   Согласие   дается   на   обработку   персональных   данных,   как   без
+							использования   средств   автоматизации,   так   и   с   их   использованием.</p>  
+							<p class="box-agreement__text">2.   Согласие   дается   на   обработку   следующих   моих   персональных   данных,   не
+								являющихся специальными или биометрическими: фамилия и имя, телефон, e-
+								mail, пользовательские данные (сведения о местоположении; тип и версия ОС; тип
+								и версия Браузера; тип устройства и разрешение его экрана; источник, откуда
+								пользователь пришел на сайт; язык ОС и Браузера; какие страницы открывает и на
+							какие       кнопки       нажимает       пользователь;       ip-адрес).</p>
+							<p class="box-agreement__text">3.     Персональные     данные     не     являются     общедоступными.</p>    
+							<p class="box-agreement__text">4.   Цель   обработки   персональных   данных:   обработка   входящих   запросов   на
+								создание   сайтов   и   ведение   корпоративных   блогов;   рассмотрение   портфолио
+								кандидатов на вакантные позиции; аналитика действий физического лица на веб-
+							сайте и функционирование веб-сайта; проведение рассылки обновлений в блоге.</p>
+							<p class="box-agreement__text">5. Основанием для обработки персональных данных является: ст. 24 Конституции
+								Российской   Федерации;   ст.6   Федерального   закона   No152-ФЗ   «О   персональных
+							данных»;   настоящее   согласие   на   обработку   персональных   данных.</p>  
+							<p class="box-agreement__text">6. В ходе обработки с персональными данными  будут совершены  следующие
+								действия:   сбор;   запись;   систематизация;   накопление;   хранение;   уточнение
+								(обновление, изменение); извлечение; использование; передача (распространение,
+							предоставление,     доступ);     блокирование;     удаление;     уничтожение. </p>   
+							<p class="box-agreement__text">7.   Персональные   данные   обрабатываются   до   отписки   физического   лица   от
+								рассылки. Также обработка персональных данных  может быть прекращена по
+								запросу   субъекта   персональных   данных.   Хранение   персональных   данных,
+								зафиксированных   на   бумажных   носителях,   осуществляется   согласно
+								Федеральному закону No125-ФЗ «Об архивном деле в Российской Федерации» и
+								иным   нормативно-правовым   актам   в   области   архивного   дела   и   архивного
+							хранения.</p>
+							<p class="box-agreement__text">8.   Согласие   может   быть   отозвано   субъектом   персональных   данных   или   его
+								представителем путем направления заявления об отзыве согласия на обработку
+							персональных   данных   на любой имеющийся в открытом доступе контакт Исполнителя, так же доступный на данном сайте </p>   
+							<p class="box-agreement__text">9.   В   случае   отзыва   субъектом   персональных   данных   или   его   представителем
+								согласия   на   обработку   персональных   данных   Исполнитель   вправе
+								продолжить обработку персональных данных без согласия субъекта персональных
+								данных при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6,
+								части   2   статьи   10   и   части   2   статьи   11   Федерального   закона   No152-ФЗ   «О
+							персональных         данных»         от         27.07.2006         г.</p>
+							<p class="box-agreement__text">10. Настоящее согласие действует все время до момента прекращения обработки
+							персональных данных, указанных в п.7 и п.8 данного Согласия. </p>
+
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 
@@ -752,7 +837,7 @@
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="section-9__footer_wrap-box">
 						<p class="section-9__footer_title">Спасибо, что посетили наш сайт!</p>
 						<a href="#home">
@@ -761,7 +846,7 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="section-9__footer_wrap-box">
 						<p class="section-9__footer_title">Дублированное меню</p>
 						<ul class="section-9__footer_dub-meny">
@@ -787,14 +872,14 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="section-9__footer_wrap-box">
 						<p class="section-9__footer_title">О сайте</p>
 						<p class="section-9__footer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem dolor ad est, possimus voluptate sequi tempore quibusdam sint harum!</p>
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="section-9__footer_wrap-box">
 						<p class="section-9__footer_title">Наши партнеры</p>
 						<p class="section-9__footer_text">Сайт создан группой</p>
